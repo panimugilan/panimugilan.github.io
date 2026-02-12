@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -257,36 +257,37 @@
 
         /* List Your Car Section */
         .list-car {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .list-car .section-title,
-        .list-car .section-subtitle {
-            color: white;
+            background: #f8f9fa;
         }
 
         .benefits {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
+            gap: 30px;
+            margin-bottom: 50px;
         }
 
         .benefit-item {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .benefit-item h3 {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
         }
 
         .list-form {
+            max-width: 600px;
+            margin: 0 auto;
             background: white;
             padding: 40px;
             border-radius: 15px;
-            max-width: 600px;
-            margin: 0 auto;
-            color: #333;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
 
         .form-group {
@@ -301,66 +302,62 @@
         }
 
         .form-group input,
-        .form-group select,
-        .form-group textarea {
+        .form-group select {
             width: 100%;
             padding: 12px;
-            border: 2px solid #ddd;
+            border: 2px solid #e0e0e0;
             border-radius: 8px;
             font-size: 1rem;
             transition: border-color 0.3s;
         }
 
         .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
+        .form-group select:focus {
             outline: none;
             border-color: #667eea;
         }
 
         /* Pricing Section */
-        .pricing {
-            background: #f8f9fa;
-        }
-
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
+            margin-bottom: 50px;
         }
 
         .pricing-card {
             background: white;
-            padding: 40px;
+            padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             text-align: center;
         }
 
         .pricing-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
             color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
         }
 
         .commission-example {
-            background: #fff3cd;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 40px;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
 
         .commission-example h3 {
-            color: #856404;
+            color: #667eea;
+            font-size: 1.8rem;
             margin-bottom: 20px;
+            text-align: center;
         }
 
-        /* Trust Section */
+        /* Trust & Safety */
         .trust {
-            background: white;
+            background: #f8f9fa;
         }
 
         .trust-grid {
@@ -370,8 +367,11 @@
         }
 
         .trust-item {
-            text-align: center;
+            background: white;
             padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
         }
 
         .trust-item-icon {
@@ -380,50 +380,55 @@
         }
 
         .trust-item h3 {
+            color: #667eea;
             font-size: 1.3rem;
             margin-bottom: 10px;
-            color: #667eea;
         }
 
         /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .contact .section-title {
-            color: white;
-        }
-
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
-            max-width: 800px;
-            margin: 0 auto;
         }
 
         .contact-item {
-            background: rgba(255,255,255,0.1);
+            background: white;
             padding: 30px;
             border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             text-align: center;
-            backdrop-filter: blur(10px);
         }
 
         .contact-item-icon {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 15px;
         }
 
         .contact-item h3 {
+            color: #667eea;
             font-size: 1.3rem;
             margin-bottom: 10px;
         }
 
+        .contact-item p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.7;
+        }
+
         /* Footer */
         footer {
-            background: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-align: center;
             padding: 30px 20px;
@@ -441,7 +446,7 @@
             }
         }
 
-        /* Responsive */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -453,15 +458,10 @@
 
             nav ul {
                 gap: 15px;
-                font-size: 0.9rem;
             }
 
             .section-title {
                 font-size: 2rem;
-            }
-
-            .list-form {
-                padding: 20px;
             }
         }
     </style>
@@ -469,18 +469,20 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="container">
-            <div class="logo">
-                🚗 DriveLink Rentals
-                <span>Rent • List • Earn</span>
-            </div>
-            <ul>
-                <li><a href="#home">🏠 Home</a></li>
-                <li><a href="#cars">🚘 Cars</a></li>
-                <li><a href="#list">List Car</a></li>
-                <li><a href="#contact">📞 Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    🚗 DriveLink Rentals
+                    <span>Rent • List • Earn</span>
+                </div>
+                <ul>
+                    <li><a href="#home">🏠 Home</a></li>
+                    <li><a href="#cars">🚗 Cars</a></li>
+                    <li><a href="#list">📝 List Car</a></li>
+                    <li><a href="#contact">📞 Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -496,64 +498,65 @@
         </div>
     </section>
 
-    <!-- Available Cars Section -->
+    <!-- Available Cars -->
     <section id="cars">
         <div class="container">
-            <h2 class="section-title">🚘 Available Cars</h2>
+            <h2 class="section-title">🚗 Available Cars</h2>
+            <p class="section-subtitle">Browse our collection of verified rental cars</p>
             
             <div class="cars-grid">
                 <!-- Car 1 -->
                 <div class="car-card">
-                    <div class="car-image">🚗</div>
+                    <div class="car-image">🚙</div>
                     <div class="car-info">
-                        <h3 class="car-name">Hyundai i20</h3>
+                        <div class="car-name">Hyundai i20</div>
                         <div class="car-details">
-                            <div>📍 Chennai</div>
+                            <div>📍 T. Nagar, Chennai</div>
                             <div>⛽ Petrol</div>
                             <div>🚗 Self Drive</div>
                         </div>
-                        <div class="car-price">₹2,500 / day</div>
+                        <div class="car-price">₹1,800 / day</div>
                         <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;">Book Now</a>
                     </div>
                 </div>
 
                 <!-- Car 2 -->
                 <div class="car-card">
-                    <div class="car-image">🚙</div>
+                    <div class="car-image">🚗</div>
                     <div class="car-info">
-                        <h3 class="car-name">Maruti Swift</h3>
+                        <div class="car-name">Maruti Swift</div>
                         <div class="car-details">
-                            <div>📍 Chennai</div>
+                            <div>📍 Velachery, Chennai</div>
                             <div>⛽ Petrol</div>
                             <div>🚗 Self Drive</div>
                         </div>
-                        <div class="car-price">₹2,200 / day</div>
+                        <div class="car-price">₹1,500 / day</div>
                         <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;">Book Now</a>
                     </div>
                 </div>
 
                 <!-- Car 3 -->
                 <div class="car-card">
-                    <div class="car-image">🚐</div>
+                    <div class="car-image">🚙</div>
                     <div class="car-info">
-                        <h3 class="car-name">Toyota Innova</h3>
+                        <div class="car-name">Honda City</div>
                         <div class="car-details">
-                            <div>📍 Chennai</div>
+                            <div>📍 Anna Nagar, Chennai</div>
                             <div>⛽ Diesel</div>
-                            <div>👨‍✈️ With Driver</div>
+                            <div>🚗 With Driver</div>
                         </div>
-                        <div class="car-price">₹3,500 / day</div>
+                        <div class="car-price">₹2,500 / day</div>
                         <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center;">Book Now</a>
                     </div>
                 </div>
 
                 <!-- Car 4 -->
                 <div class="car-card">
-                    <div class="car-image">🚗</div>
+                    <div class="car-image">🚐</div>
                     <div class="car-info">
-                        <h3 class="car-name">Hyundai Creta</h3>
+                        <div class="car-name">Toyota Innova</div>
                         <div class="car-details">
-                            <div>📍 Chennai</div>
+                            <div>📍 Adyar, Chennai</div>
                             <div>⛽ Diesel</div>
                             <div>🚗 Self Drive</div>
                         </div>
@@ -687,9 +690,4 @@
     </section>
 
     <!-- Pricing & Commission -->
-    <section class="pricing">
-        <div class="container">
-            <h2 class="section-title">💰 Pricing & Platform Commission</h2>
-            <p class="section-subtitle">DriveLink Rentals operates as a marketplace platform connecting car owners and customers.</p>
-            
-            <div class="pricing-grid
+    <section class="pricing">v
