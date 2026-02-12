@@ -1,219 +1,222 @@
- [10:25 pm, 12/02/2026] mugil: cript>
-[10:39 pm, 12/02/2026] mugil: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚗 DriveLink Rentals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveLink Rentals</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+:root{
+    --primary:#4f46e5;
+    --secondary:#6366f1;
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --text:#1f2937;
+}
 
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            color: #333;
-        }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-        header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-        }
+body{
+    font-family:'Segoe UI',system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    padding:15px 20px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
 
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 15px;
-        }
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
+nav h2{color:white;}
 
-        section {
-            padding: 60px 20px;
-        }
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
 
-        .hero {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-align: center;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+}
 
-        .btn {
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-            cursor: pointer;
-        }
+.hero{
+    text-align:center;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:90px 20px;
+    border-radius:0 0 40px 40px;
+}
 
-        .btn-primary {
-            background: white;
-            color: #667eea;
-        }
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+    text-decoration:none;
+    cursor:pointer;
+    border:none;
+}
 
-        .cars-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
+.btn-primary{
+    background:white;
+    color:var(--primary);
+}
 
-        .car-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+section{padding:70px 20px;}
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+.container{max-width:1200px;margin:auto;}
 
-        footer {
-            background: #667eea;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+.cars-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.car-card{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.price{
+    color:var(--primary);
+    font-weight:700;
+    margin:10px 0;
+}
+
+.form-box{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+footer{
+    background:#111827;
+    color:#9ca3af;
+    text-align:center;
+    padding:25px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <div>🚗 DriveLink Rentals</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#cars">Cars</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+<h2>🚗 DriveLink Rentals</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#cars">Cars</a></li>
+<li><a href="#list">List Car</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
 
 <section class="hero" id="home">
-    <h1>Rent Cars Near You</h1>
-    <a href="#cars" class="btn btn-primary">Find a Car</a>
+<h1>Rent Cars Near You</h1>
+<br>
+<a href="#cars" class="btn btn-primary">Find a Car</a>
 </section>
 
 <section id="cars">
-    <h2>Available Cars</h2>
+<div class="container">
+<h2 class="section-title">Available Cars</h2>
 
-    <div class="cars-grid">
-        <!-- ✅ Surrounding Locations Defined -->
-        <div class="car-card" data-location="velachery,taramani,perungudi,adyar,thoraipakkam">
-            <h3>Hyundai i20</h3>
-            <p>📍 Velachery</p>
-            <p>₹1,800 / day</p>
-            <a href="#contact" class="btn btn-primary">Book Now</a>
-        </div>
+<div class="cars-grid" id="carContainer">
 
-        <div class="car-card" data-location="t nagar,saidapet,guindy,ashok nagar,kodambakkam">
-            <h3>Maruti Swift</h3>
-            <p>📍 T Nagar</p>
-            <p>₹1,500 / day</p>
-            <a href="#contact" class="btn btn-primary">Book Now</a>
-        </div>
+<div class="car-card" data-location="velachery,adyar,taramani">
+<h3>Hyundai i20</h3>
+<p>📍 Velachery</p>
+<div class="price">₹1,800 / day</div>
+</div>
 
-        <div class="car-card" data-location="anna nagar,aminjikarai,koyambedu,arumbakkam">
-            <h3>Honda City</h3>
-            <p>📍 Anna Nagar</p>
-            <p>₹2,200 / day</p>
-            <a href="#contact" class="btn btn-primary">Book Now</a>
-        </div>
-    </div>
+</div>
+</div>
+</section>
+
+<!-- 🔥 OWNER REGISTRATION -->
+<section id="list">
+<h2 class="section-title">List Your Car</h2>
+
+<div class="form-box">
+<input type="text" id="ownerName" placeholder="Owner Name">
+<input type="text" id="carName" placeholder="Car Model">
+<input type="text" id="carLocation" placeholder="Location (Example: Velachery)">
+<input type="number" id="carPrice" placeholder="Price per Day">
+
+<button class="btn btn-primary" id="addCarBtn">Post Car</button>
+</div>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-
-    <div class="contact-grid">
-        <div class="car-card">
-            <h3>Address</h3>
-            <p>
-                No: 114, Second Cross Street,<br>
-                Manamai Village,<br>
-                Chengalpattu District - 603 102
-            </p>
-        </div>
-
-        <div class="car-card">
-            <h3>Phone</h3>
-            <p><a href="tel:+919384187988">+91 9384187988</a></p>
-        </div>
-
-        <div class="car-card">
-            <h3>Email</h3>
-            <p><a href="mailto:drivelink@gmail.com">drivelink@gmail.com</a></p>
-        </div>
-    </div>
+<h2 class="section-title">Contact Us</h2>
+<div class="form-box">
+<p>📞 +91 9384187988</p>
+<p>📧 drivelink@gmail.com</p>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 DriveLink Rentals</p>
+<p>© 2026 DriveLink Rentals</p>
 </footer>
 
-<!-- ✅ SCRIPT -->
 <script>
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-});
+// Add Car Logic (No backend needed)
+document.getElementById("addCarBtn").addEventListener("click", function(){
 
-// 🔥 15KM STYLE LOCATION FILTER
-const findCarBtn = document.querySelector('a[href="#cars"]');
+    const name = document.getElementById("carName").value;
+    const location = document.getElementById("carLocation").value.toLowerCase();
+    const price = document.getElementById("carPrice").value;
 
-findCarBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-
-    const userLocation = prompt("Enter your location");
-
-    if (!userLocation) return;
-
-    const location = userLocation.toLowerCase().trim();
-
-    document.querySelector('#cars').scrollIntoView({ behavior: 'smooth' });
-
-    let matchFound = false;
-
-    document.querySelectorAll('.car-card').forEach(car => {
-        const locations = car.dataset.location;
-
-        if (locations && locations.includes(location)) {
-            car.style.display = "block";
-            matchFound = true;
-        } else if (car.dataset.location) {
-            car.style.display = "none";
-        }
-    });
-
-    if (!matchFound) {
-        alert("No cars within 15km of your location");
+    if(!name || !location || !price){
+        alert("Please fill all fields");
+        return;
     }
+
+    const card = document.createElement("div");
+    card.className = "car-card";
+    card.dataset.location = location;
+
+    card.innerHTML = `
+        <h3>${name}</h3>
+        <p>📍 ${location}</p>
+        <div class="price">₹${price} / day</div>
+    `;
+
+    document.getElementById("carContainer").appendChild(card);
+
+    alert("Car Listed Successfully ✅");
 });
 </script>
 
